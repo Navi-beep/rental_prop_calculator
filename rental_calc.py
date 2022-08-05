@@ -4,9 +4,65 @@ import math
 go = True
 
 class ROI:
-    pass
+    #create initialize function
+    def __init__(self, value):
+        self.value = value
+    
+    def income():
+        ask_1 = int(input("What is your rental income?"))
+        ask_2 = int(input("What is your laundry income?"))
+        ask_3 = int(input("What is your storage income?"))
+        ask_4 = int(input("What is your misc income?"))
 
-    def __init__(self):
+        total_income = ask_1 + ask_2 + ask_3 + ask_4
+        print(total_income)
+
+    
+    def expenses():
+        ask_5 = int(input("What is your tax expenses?"))
+        ask_6 = int(input("What is your insurance expenses?"))
+        ask_7 = int(input("What are your water/sewer expenses?"))
+        ask_8 = int(input("What are your electric/gas expenses?"))
+        ask_9 = int(input("What are your misc expenses?"))
+        
+
+        total_monthly_expenses = ask_5 + ask_6 + ask_7 + ask_8 + ask_9
+        print(total_monthly_expenses)
+
+    def cash_flow():
+
+        total_monthly_cash_flow = total_income - total_monthly_expenses
+
+        total_annual_cash_flow = total_monthly_cash_flow * 12 
+        print(total_annual_cash_flow)
+
+
+    def cash_return():
+        ask_10 = int(input("What is your down payment?"))
+        ask_11 = int(input("What are your closing costs?"))
+        ask_12 = int(input("What is your rehab budget? "))
+        ask_13 = int(input("What are your misc expenses?"))
+
+        total_investment = ask_10 + ask_11 + ask_12 + ask_13
+
+        cash_on_cash_return = (total_annual_cash_flow / total_investment) * 100
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
