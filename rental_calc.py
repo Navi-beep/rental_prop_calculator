@@ -31,6 +31,8 @@ class ROI:
 
     def cash_flow():
 
+        total_monthly_cash_flow = ROI()
+
         total_monthly_cash_flow = total_income - total_monthly_expenses
 
         total_annual_cash_flow = total_monthly_cash_flow * 12 
@@ -46,7 +48,9 @@ class ROI:
         total_investment = ask_10 + ask_11 + ask_12 + ask_13
 
         cash_on_cash_return = (total_annual_cash_flow / total_investment) * 100
-        
+
+        print(cash_on_cash_return)
+
 
 
 
