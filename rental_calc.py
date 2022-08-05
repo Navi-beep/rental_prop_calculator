@@ -49,3 +49,4 @@ class ROI:
     #take X * 100 to get cash on cash return!
 
     #print cash on cash return result
+    
