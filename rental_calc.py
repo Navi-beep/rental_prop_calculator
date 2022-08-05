@@ -1,5 +1,3 @@
-import math
-
 
 go = True
 
@@ -8,7 +6,7 @@ class ROI:
     def __init__(self, value):
         self.value = value
     
-    def income():
+    def income(self):
         ask_1 = int(input("What is your rental income?"))
         ask_2 = int(input("What is your laundry income?"))
         ask_3 = int(input("What is your storage income?"))
@@ -18,7 +16,7 @@ class ROI:
         print(total_income)
 
     
-    def expenses():
+    def expenses(self):
         ask_5 = int(input("What is your tax expenses?"))
         ask_6 = int(input("What is your insurance expenses?"))
         ask_7 = int(input("What are your water/sewer expenses?"))
@@ -29,7 +27,7 @@ class ROI:
         total_monthly_expenses = ask_5 + ask_6 + ask_7 + ask_8 + ask_9
         print(total_monthly_expenses)
 
-    def cash_flow():
+    def cash_flow(self):
 
         total_monthly_cash_flow = ROI()
 
@@ -39,7 +37,7 @@ class ROI:
         print(total_annual_cash_flow)
 
 
-    def cash_return():
+    def cash_return(self):
         ask_10 = int(input("What is your down payment?"))
         ask_11 = int(input("What are your closing costs?"))
         ask_12 = int(input("What is your rehab budget? "))
