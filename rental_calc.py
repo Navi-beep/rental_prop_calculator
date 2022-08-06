@@ -101,10 +101,17 @@ class ROI:
 def run_ROI():
     my_ROI = ROI()
     while True:
-        print('Please enter your deets')
-        choose = input('Would you like to start analizing your cash on cash return?')
+        choose = input("Would you like to start analizing your cash on cash return? Press 'y' or 'n'. ")
+
+        while choose not in {'y', 'n'}:
+            choose = input("Please choose what you want to do! Please select 'y' or 'n'")
         if choose == 'y':
             my_ROI.income()
+            my_ROI.expenses()
+            my_ROI.cash_flow()
+            my_ROI.cash_return()
 
+        elif choose == 'n':
+            break
 
 run_ROI()
