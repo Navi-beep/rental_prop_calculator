@@ -23,8 +23,9 @@ class ROI:
         self.misc = int(input("What is your misc income? "))
 
         self.total_income = self.rental + self.laundry + self.storage + self.misc
-        return(f"Total Income : {self.total_income} ")
         self.cash_list.append(self.total_income)
+        return(f"Total Income : {self.total_income} ")
+        
 
     #define a function for expenses
      #ask for input for: taxes
