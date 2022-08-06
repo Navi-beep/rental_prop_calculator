@@ -1,3 +1,13 @@
+#print("'MURICA")
+
+#for i in range(5):
+#        i = ("*********----------------")
+ #       print(i)
+###for a in range(5):
+ #       a = ("-------------------------")
+#       print(a)
+
+
 def expenses():
         ask_5 = int(input("What are your tax expenses?"))
         ask_6 = int(input("What are your insurance expenses?"))

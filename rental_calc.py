@@ -16,12 +16,12 @@ class ROI:
     
     def income(self):
         
-        ask_1 = int(input("What is your rental income? "))
-        ask_2 = int(input("What is your laundry income? "))
-        ask_3 = int(input("What is your storage income? "))
-        ask_4 = int(input("What is your misc income? "))
+        rental = int(input("What is your rental income? "))
+        laundry = int(input("What is your laundry income? "))
+        storage = int(input("What is your storage income? "))
+        misc = int(input("What is your misc income? "))
 
-        total_income = ask_1 + ask_2 + ask_3 + ask_4
+        total_income = rental + laundry + storage + misc
         print(f"Total Income : {total_income} ")
 
     #define a function for expenses
@@ -38,18 +38,16 @@ class ROI:
      #ask for input for: prop managment
      #ask for input for: mortgage
     #total of all inputs for total monthly expenses
-
-
-    
+ 
     def expenses(self):
-        ask_5 = int(input("What are your tax expenses? "))
-        ask_6 = int(input("What are your insurance expenses? "))
-        ask_7 = int(input("What are your water/sewer expenses? "))
-        ask_8 = int(input("What are your electric/gas expenses? "))
-        ask_9 = int(input("What are your misc expenses? "))
+        tax = int(input("What are your tax expenses? "))
+        insurance = int(input("What are your insurance expenses? "))
+        water_sewer = int(input("What are your water/sewer expenses? "))
+        electric_gas = int(input("What are your electric/gas expenses? "))
+        misc = int(input("What are your misc expenses? "))
         
 
-        total_monthly_expenses = ask_5 + ask_6 + ask_7 + ask_8 + ask_9
+        total_monthly_expenses = tax + insurance + water_sewer + electric_gas + misc 
         print(f"Total Monthly Expenses: {total_monthly_expenses} ")
 
         #define a function for cash flow
