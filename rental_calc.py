@@ -5,6 +5,7 @@ class ROI:
     #create initialize function
     def __init__(self, value):
         self.value = value
+        self.cash_list = []
 
 
     #define a function for income
@@ -23,6 +24,7 @@ class ROI:
 
         self.total_income = self.rental + self.laundry + self.storage + self.misc
         print(f"Total Income : {self.total_income} ")
+        self.cash_list.append(self.total_income)
 
     #define a function for expenses
      #ask for input for: taxes
@@ -49,6 +51,7 @@ class ROI:
 
         self.total_monthly_expenses = self.tax + self.insurance + self.water_sewer + self.electric_gas + self.misc 
         print(f"Total Monthly Expenses: ${self.total_monthly_expenses} ")
+        self.cash_list.append(self.total_monthly_expenses)
 
         #define a function for cash flow
         #total monthly income - total monthly expenses
@@ -63,6 +66,7 @@ class ROI:
 
         self.total_annual_cash_flow = self.total_monthly_cash_flow * 12 
         print(f"Total Annual Cash Flow: ${self.total_annual_cash_flow}") 
+        self.cash_list.append(self.total_annual_cash_flow)
 
 
     #define a function for cash on cash return
@@ -82,7 +86,10 @@ class ROI:
 
         self.cash_on_cash_return = (self.total_annual_cash_flow / self.total_investment) * 100
 
+        self.cash_list.append(self.cash_on_cash_return)
+
         print(f" Your cash on cash ROI is:  {self.cash_on_cash_return}")
+        
 
 
     #calculate 
@@ -91,3 +98,13 @@ class ROI:
 
     #print cash on cash return result
 
+def run_ROI():
+    my_ROI = ROI()
+    while True:
+        print('Please enter your deets')
+        choose = input('Would you like to start analizing your cash on cash return?')
+        if choose == 'y':
+            my_ROI.income()
+
+
+run_ROI()
