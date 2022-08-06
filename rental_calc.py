@@ -48,7 +48,7 @@ class ROI:
         
 
         self.total_monthly_expenses = self.tax + self.insurance + self.water_sewer + self.electric_gas + self.misc 
-        print(f"Total Monthly Expenses: {self.total_monthly_expenses} ")
+        print(f"Total Monthly Expenses: ${self.total_monthly_expenses} ")
 
         #define a function for cash flow
         #total monthly income - total monthly expenses
@@ -57,12 +57,12 @@ class ROI:
 
     def cash_flow(self):
 
-        total_monthly_cash_flow = ROI()
+        self.total_monthly_cash_flow = ROI()
 
         self.total_monthly_cash_flow = self.total_income - self.total_monthly_expenses
 
         self.total_annual_cash_flow = self.total_monthly_cash_flow * 12 
-        print(f"Total Annual Cash Flow: {self.total_annual_cash_flow}") 
+        print(f"Total Annual Cash Flow: ${self.total_annual_cash_flow}") 
 
 
     #define a function for cash on cash return
@@ -91,4 +91,3 @@ class ROI:
 
     #print cash on cash return result
 
- 
