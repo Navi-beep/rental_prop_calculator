@@ -3,8 +3,7 @@ go = True
 
 class ROI:
     #create initialize function
-    def __init__(self, value):
-        self.value = value
+    def __init__(self):
         self.cash_list = []
 
 
