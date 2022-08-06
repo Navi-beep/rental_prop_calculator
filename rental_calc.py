@@ -23,7 +23,7 @@ class ROI:
         self.misc = int(input("What is your misc income? "))
 
         self.total_income = self.rental + self.laundry + self.storage + self.misc
-        print(f"Total Income : {self.total_income} ")
+        return(f"Total Income : {self.total_income} ")
         self.cash_list.append(self.total_income)
 
     #define a function for expenses
@@ -50,7 +50,7 @@ class ROI:
         
 
         self.total_monthly_expenses = self.tax + self.insurance + self.water_sewer + self.electric_gas + self.misc 
-        print(f"Total Monthly Expenses: ${self.total_monthly_expenses} ")
+        return(f"Total Monthly Expenses: ${self.total_monthly_expenses} ")
         self.cash_list.append(self.total_monthly_expenses)
 
         #define a function for cash flow
@@ -65,7 +65,7 @@ class ROI:
         self.total_monthly_cash_flow = self.total_income - self.total_monthly_expenses
 
         self.total_annual_cash_flow = self.total_monthly_cash_flow * 12 
-        print(f"Total Annual Cash Flow: ${self.total_annual_cash_flow}") 
+        return(f"Total Annual Cash Flow: ${self.total_annual_cash_flow}") 
         self.cash_list.append(self.total_annual_cash_flow)
 
 
@@ -88,7 +88,7 @@ class ROI:
 
         self.cash_list.append(self.cash_on_cash_return)
 
-        print(f" Your cash on cash ROI is:  {self.cash_on_cash_return}")
+        return(f" Your cash on cash ROI is:  {self.cash_on_cash_return}")
         
 
 
