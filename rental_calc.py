@@ -16,13 +16,13 @@ class ROI:
     
     def income(self):
         
-        rental = int(input("What is your rental income? "))
-        laundry = int(input("What is your laundry income? "))
-        storage = int(input("What is your storage income? "))
-        misc = int(input("What is your misc income? "))
+        self.rental = int(input("What is your rental income? "))
+        self.laundry = int(input("What is your laundry income? "))
+        self.storage = int(input("What is your storage income? "))
+        self.misc = int(input("What is your misc income? "))
 
-        total_income = rental + laundry + storage + misc
-        print(f"Total Income : {total_income} ")
+        self.total_income = self.rental + self.laundry + self.storage + self.misc
+        print(f"Total Income : {self.total_income} ")
 
     #define a function for expenses
      #ask for input for: taxes
@@ -40,15 +40,15 @@ class ROI:
     #total of all inputs for total monthly expenses
  
     def expenses(self):
-        tax = int(input("What are your tax expenses? "))
-        insurance = int(input("What are your insurance expenses? "))
-        water_sewer = int(input("What are your water/sewer expenses? "))
-        electric_gas = int(input("What are your electric/gas expenses? "))
-        misc = int(input("What are your misc expenses? "))
+        self.tax = int(input("What are your tax expenses? "))
+        self.insurance = int(input("What are your insurance expenses? "))
+        self.water_sewer = int(input("What are your water/sewer expenses? "))
+        self.electric_gas = int(input("What are your electric/gas expenses? "))
+        self.misc = int(input("What are your misc expenses? "))
         
 
-        total_monthly_expenses = tax + insurance + water_sewer + electric_gas + misc 
-        print(f"Total Monthly Expenses: {total_monthly_expenses} ")
+        self.total_monthly_expenses = self.tax + self.insurance + self.water_sewer + self.electric_gas + self.misc 
+        print(f"Total Monthly Expenses: {self.total_monthly_expenses} ")
 
         #define a function for cash flow
         #total monthly income - total monthly expenses
@@ -59,10 +59,10 @@ class ROI:
 
         total_monthly_cash_flow = ROI()
 
-        total_monthly_cash_flow = total_income - total_monthly_expenses
+        self.total_monthly_cash_flow = self.total_income - self.total_monthly_expenses
 
-        total_annual_cash_flow = total_monthly_cash_flow * 12 
-        print(f"Total Annual Cash Flow: {total_annual_cash_flow}") 
+        self.total_annual_cash_flow = self.total_monthly_cash_flow * 12 
+        print(f"Total Annual Cash Flow: {self.total_annual_cash_flow}") 
 
 
     #define a function for cash on cash return
@@ -73,16 +73,16 @@ class ROI:
     #total of all the above to get Total Investment
 
     def cash_return(self):
-        ask_10 = int(input("What is your down payment?"))
-        ask_11 = int(input("What are your closing costs?"))
-        ask_12 = int(input("What is your rehab budget? "))
-        ask_13 = int(input("What are your misc expenses?"))
+        self.down_payment = int(input("What is your down payment?"))
+        self.closing = int(input("What are your closing costs?"))
+        self.rehab = int(input("What is your rehab budget? "))
+        self.misc_expense = int(input("What are your misc expenses?"))
 
-        total_investment = ask_10 + ask_11 + ask_12 + ask_13
+        self.total_investment = self.down_payment + self.closing + self.rehab + self.misc_expense 
 
-        cash_on_cash_return = (total_annual_cash_flow / total_investment) * 100
+        self.cash_on_cash_return = (self.total_annual_cash_flow / self.total_investment) * 100
 
-        print(f" Your cash on cash ROI is:  {cash_on_cash_return}")
+        print(f" Your cash on cash ROI is:  {self.cash_on_cash_return}")
 
 
     #calculate 
