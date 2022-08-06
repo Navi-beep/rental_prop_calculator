@@ -23,7 +23,7 @@ class ROI:
 
         self.total_income = self.rental + self.laundry + self.storage + self.misc
         self.cash_list.append(self.total_income)
-        return(f"Total Income : {self.total_income} ")
+        print(f"Total Income : ${self.total_income} ")
         
 
     #define a function for expenses
@@ -51,7 +51,7 @@ class ROI:
 
         self.total_monthly_expenses = self.tax + self.insurance + self.water_sewer + self.electric_gas + self.misc 
         self.cash_list.append(self.total_monthly_expenses)
-        return(f"Total Monthly Expenses: ${self.total_monthly_expenses} ")
+        print(f"Total Monthly Expenses: ${self.total_monthly_expenses} ")
         
 
         #define a function for cash flow
@@ -67,7 +67,7 @@ class ROI:
 
         self.total_annual_cash_flow = self.total_monthly_cash_flow * 12 
         self.cash_list.append(self.total_annual_cash_flow)
-        return(f"Total Annual Cash Flow: ${self.total_annual_cash_flow}") 
+        print(f"Total Annual Cash Flow: ${self.total_annual_cash_flow}") 
         
 
 
@@ -90,7 +90,7 @@ class ROI:
 
         self.cash_list.append(self.cash_on_cash_return)
 
-        return(f" Your cash on cash ROI is:  {self.cash_on_cash_return}")
+        print(f" Your cash on cash ROI is:  {self.cash_on_cash_return}")
         
 
 
@@ -103,7 +103,7 @@ class ROI:
 def run_ROI():
     my_ROI = ROI()
     while True:
-        choose = input("Would you like to start analizing your cash on cash return? Press 'y' or 'n'. ")
+        choose = input("Would you like to start analizing your cash on cash return? Press 'y' or 'n': ")
 
         while choose not in {'y', 'n'}:
             choose = input("Please choose what you want to do! Please select 'y' or 'n'")
