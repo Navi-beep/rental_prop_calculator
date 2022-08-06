@@ -15,6 +15,7 @@ class ROI:
     #total all of the income for total monthly income
     
     def income(self):
+        
         ask_1 = int(input("What is your rental income? "))
         ask_2 = int(input("What is your laundry income? "))
         ask_3 = int(input("What is your storage income? "))
@@ -91,4 +92,5 @@ class ROI:
     #take X * 100 to get cash on cash return!
 
     #print cash on cash return result
-    
+
+ 
