@@ -90,7 +90,16 @@ class ROI:
 
         self.cash_list.append(self.cash_on_cash_return)
 
-        print(f"Your cash on cash ROI is:  {self.cash_on_cash_return}")
+
+        print('********************************')
+        print(f"Your total income is ${self.total_income}\n")
+        print(f"Your total monthly expenses are ${self.total_monthly_expenses}\n")
+        print(f"Your total annual cash flow is ${self.total_annual_cash_flow}\n")
+        print(f"Your total investment is ${self.total_investment}\n")
+        print(f"Your total income is ${self.total_income}\n")
+        print(f"Using these factors, your cash on cash ROI is: {self.cash_on_cash_return}")
+        print('********************************')
+        
         
 
 
