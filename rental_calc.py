@@ -61,8 +61,6 @@ class ROI:
 
     def cash_flow(self):
 
-        self.total_monthly_cash_flow = ROI()
-
         self.total_monthly_cash_flow = self.total_income - self.total_monthly_expenses
 
         self.total_annual_cash_flow = self.total_monthly_cash_flow * 12 
@@ -108,6 +106,7 @@ class ROI:
 
 def run_ROI():
     my_ROI = ROI()
+
     while True:
         print(f"Hello!")
         choose = input("Would you like to start analizing your cash on cash return? Press 'y' or 'n': ")
