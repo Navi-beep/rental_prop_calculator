@@ -97,13 +97,14 @@ class ROI:
 
 
         print('********************************')
-        print(f"Your total income is ${self.total_income}\n")
-        print(f"Your total monthly expenses are ${self.total_monthly_expenses}\n")
-        print(f"Your total annual cash flow is ${self.total_annual_cash_flow}\n")
+        print(f"Your total income is ${self.cash_list[0]}\n")
+        print(f"Your total monthly expenses are ${self.cash_list[1]}\n")
+        print(f"Your total annual cash flow is ${self.cash_list[2]}\n")
         print(f"Your total investment is ${self.total_investment}\n")
         print(f"Your total income is ${self.total_income}\n")
-        print(f"Using these factors, your cash on cash ROI is: {self.cash_on_cash_return}")
+        print(f"Using these factors, your cash on cash ROI is: {self.cash_list[3]}")
         print('********************************')
+        print(self.cash_list)
         
     #calculate 
     #annual cash flow / total investment = X
@@ -125,8 +126,10 @@ def run_ROI():
             my_ROI.expenses()
             my_ROI.cash_flow()
             my_ROI.cash_return()
+            
            
         elif choose == 'n':
             break
 
 run_ROI()
+
