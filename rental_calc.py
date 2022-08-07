@@ -104,7 +104,6 @@ class ROI:
         print(f"Your total income is ${self.total_income}\n")
         print(f"Using these factors, your cash on cash ROI is: {self.cash_list[3]}")
         print('********************************')
-        print(self.cash_list)
         
     #calculate 
     #annual cash flow / total investment = X
