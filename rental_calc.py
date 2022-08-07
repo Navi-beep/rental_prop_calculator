@@ -19,7 +19,6 @@ class ROI:
         self.laundry = int(input("What is your laundry income? "))
         self.storage = int(input("What is your storage income? "))
         self.misc = int(input("What is your misc income? "))
-
         self.total_income = self.rental + self.laundry + self.storage + self.misc
         self.cash_list.append(self.total_income)
         print(f"Total Income : ${self.total_income} ")
