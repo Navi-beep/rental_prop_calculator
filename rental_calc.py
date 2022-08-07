@@ -79,10 +79,10 @@ class ROI:
     #total of all the above to get Total Investment
 
     def cash_return(self):
-        self.down_payment = int(input("What is your down payment?"))
-        self.closing = int(input("What are your closing costs?"))
+        self.down_payment = int(input("What is your down payment? "))
+        self.closing = int(input("What are your closing costs? "))
         self.rehab = int(input("What is your rehab budget? "))
-        self.misc_expense = int(input("What are your misc expenses?"))
+        self.misc_expense = int(input("What are your misc expenses? "))
 
         self.total_investment = self.down_payment + self.closing + self.rehab + self.misc_expense 
 
@@ -90,7 +90,7 @@ class ROI:
 
         self.cash_list.append(self.cash_on_cash_return)
 
-        print(f" Your cash on cash ROI is:  {self.cash_on_cash_return}")
+        print(f"Your cash on cash ROI is:  {self.cash_on_cash_return}")
         
 
 
@@ -103,16 +103,17 @@ class ROI:
 def run_ROI():
     my_ROI = ROI()
     while True:
+        print(f"Hello!")
         choose = input("Would you like to start analizing your cash on cash return? Press 'y' or 'n': ")
 
         while choose not in {'y', 'n'}:
-            choose = input("Please choose what you want to do! Please select 'y' or 'n'")
+            choose = input("Please choose what you want to do! Please select 'y' or 'n' ")
         if choose == 'y':
             my_ROI.income()
             my_ROI.expenses()
             my_ROI.cash_flow()
             my_ROI.cash_return()
-
+           
         elif choose == 'n':
             break
 
