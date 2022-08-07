@@ -15,6 +15,7 @@ class ROI:
     #total all of the income for total monthly income
     
     def income(self):
+
         self.rental = int(input("What is your rental income? "))
         self.laundry = int(input("What is your laundry income? "))
         self.storage = int(input("What is your storage income? "))
