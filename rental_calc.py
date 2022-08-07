@@ -46,9 +46,18 @@ class ROI:
         self.water_sewer = int(input("What are your water/sewer expenses? "))
         self.electric_gas = int(input("What are your electric/gas expenses? "))
         self.misc = int(input("What are your misc expenses? "))
+        self.hoa = int(input("What are your HOA expenses? "))
+        self.lawn = int(input("What are your Lawn/Snow expenses? "))
+        self.vacancy = int(input("What are your vacancy expenses? "))
+        self.repairs = int(input("What are your repairs expenses? "))
+        self.capex = int(input("What are your CapEx expenses? "))
+        self.prop_mag = int(input("What are your property management expenses? "))
+        self.mortgage = int(input("What are your mortgage expenses? "))
+    
         
 
-        self.total_monthly_expenses = self.tax + self.insurance + self.water_sewer + self.electric_gas + self.misc 
+        self.total_monthly_expenses = self.tax + self.insurance + self.water_sewer + self.electric_gas + self.misc + self.hoa + self.lawn + self.vacancy + self.repairs + self.capex + self.prop_mag + self.mortgage
+
         self.cash_list.append(self.total_monthly_expenses)
         print(f"Total Monthly Expenses: ${self.total_monthly_expenses} ")
         
